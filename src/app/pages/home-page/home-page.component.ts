@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Tweet } from '../../app.types';
+import { LocalTweetsService } from '../../services/local-tweets.service';
 
 @Component({
   selector: 'app-home-page',
@@ -7,12 +8,9 @@ import { Tweet } from '../../app.types';
   styleUrls: ['./home-page.component.scss'],
 })
 export class HomePageComponent {
-  tweets: Tweet[] = [
-    {
-      id: '123',
-      content: '#Dummy tweet',
-      hashtags: ['#dummy'],
-      userId: '321',
-    },
-  ];
+  tweets: Tweet[] = [];
+
+  constructor(private localTweetsService: LocalTweetsService) {
+    this.tweets = this.localTweetsService.getTweets();
+  }
 }

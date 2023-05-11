@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+// Variable overrides
+$primary: #1ca1f1;
+$enable-shadows: false;
+$prefix: 'mo-';
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  min-height: 100vh !important;
+}
+
+.tweets-container {
+  background: #f2f5f7;
+
+  &__scrollable {
+    height: calc(100vh - 214px);
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  app-tweet-item:first-child {
+    margin-top: 8px;
+  }
+}

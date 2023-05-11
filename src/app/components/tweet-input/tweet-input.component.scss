@@ -1,0 +1,21 @@
+.tweet-input {
+  border-bottom: 2px solid #e6ecf0;
+
+  input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 24px 0;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      margin-right: 12px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+}

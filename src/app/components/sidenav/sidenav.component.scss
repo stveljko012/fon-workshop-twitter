@@ -1,0 +1,19 @@
+.sidenav {
+  list-style: none;
+  padding: 0;
+  margin-top: 16px;
+
+  li {
+    cursor: pointer;
+    padding: 8px 16px 8px 0;
+    font-size: 28px;
+
+    i {
+      margin-right: 8px;
+    }
+  }
+
+  .route-active {
+    color: #1ca1f1;
+  }
+}

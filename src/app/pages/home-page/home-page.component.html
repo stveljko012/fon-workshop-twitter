@@ -1,0 +1,9 @@
+<app-page-heading [title]="'Home'"></app-page-heading>
+
+<app-tweet-input></app-tweet-input>
+
+<div class="row tweets-container">
+  <div class="col tweets-container__scrollable">
+    <app-tweet-item *ngFor="let t of tweets" [content]="t.content"></app-tweet-item>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.left-col {
+  border-right: 1px solid #e6ecf0;
+  min-height: 100vh;
+  padding: 16px 36px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-col {
+  border-right: 1px solid #e6ecf0;
+  border-left: 1px solid #e6ecf0;
+  min-height: 100vh;
+}
+
+.right-col {
+  border-left: 1px solid #e6ecf0;
+  min-height: 100vh;
+}

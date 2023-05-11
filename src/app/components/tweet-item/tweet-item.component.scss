@@ -1,0 +1,14 @@
+.tweet-item {
+  background: white;
+  border-top: 1px solid #e6ecf0;
+  border-bottom: 1px solid #e6ecf0;
+
+  i {
+    cursor: pointer;
+
+    &:hover {
+      color: gray;
+      color: #1ca1f1;
+    }
+  }
+}

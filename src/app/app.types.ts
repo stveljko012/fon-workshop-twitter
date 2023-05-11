@@ -3,4 +3,7 @@ export type Tweet = {
   hashtags: string[];
   content: string;
   userId: string;
+  title: string;
 };
+
+export type AddTweetPayload = Omit<Tweet, 'id'>;

@@ -5,34 +5,17 @@ import { Tweet } from '../app.types';
   providedIn: 'root',
 })
 export class LocalTweetsService {
-  private tweets: Tweet[] = [
-    {
-      id: '1',
-      content: '#Dummy tweet',
-      hashtags: ['#dummy'],
-      userId: '321',
-    },
-    {
-      id: '2',
-      content: '#Dummy tweet',
-      hashtags: ['#dummy'],
-      userId: '321',
-    },
-    {
-      id: '3',
-      content: '#Dummy tweet',
-      hashtags: ['#dummy'],
-      userId: '321',
-    },
-  ];
+  private tweets: Tweet[] = [];
 
   constructor() {}
 
   getTweets(): Tweet[] {
-    return this.tweets;
+    return [...this.tweets];
   }
 
   removeTweet(): void {}
 
-  addTweet(): void {}
+  addTweet(tweet: Tweet): void {
+    this.tweets.push(tweet);
+  }
 }

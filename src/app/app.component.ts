@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { TweetsService } from './services/tweets.service';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(router: Router) {}
+  constructor(private tweetsService: TweetsService) {
+    this.tweetsService.loadTweets();
+  }
 }

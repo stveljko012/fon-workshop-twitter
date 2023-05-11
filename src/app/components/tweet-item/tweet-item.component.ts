@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Tweet } from '../../app.types';
 
 @Component({
   selector: 'app-tweet-item',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tweet-item.component.scss'],
 })
 export class TweetItemComponent {
-  @Input() content = '';
+  @Input() tweet?: Tweet;
 }

@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TweetInputComponent } from './components/tweet-input/tweet-input.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { TweetInputComponent } from './components/tweet-input/tweet-input.compon
     ProfilePageComponent,
     TweetInputComponent,
   ],
-  imports: [BrowserModule, HttpClientModule, AppRoutingModule],
+  imports: [BrowserModule, HttpClientModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

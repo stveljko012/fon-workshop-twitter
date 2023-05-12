@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LocalTweetsService } from '../../services/local-tweets.service';
 import { TweetsService } from '../../services/tweets.service';
+import { loggedUserId } from '../../user';
 
 @Component({
   selector: 'app-tweet-input',
@@ -21,7 +22,7 @@ export class TweetInputComponent {
       title: 'title',
       content: this.userInput,
       hashtags: [],
-      userId: 'userId',
+      userId: loggedUserId,
     });
 
     this.userInput = '';

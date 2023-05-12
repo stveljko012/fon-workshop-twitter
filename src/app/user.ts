@@ -1,1 +1,1 @@
-export const loggedUserId = '645a462a46811a96bbe17cd8';
+export const loggedUserId = 'ime-prezime';
